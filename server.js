@@ -19,8 +19,8 @@ server.use(express.json());
 server.use(morgan('dev'));
 
 //using routes
-server.use('/api/actions/', actionRoutes)
-server.use('/api/projects/', projectRoutes )
+server.use('/api/actions', actionRoutes)
+server.use('/api/projects', projectRoutes )
 
 //initial route
 server.get('/', (req, res) => {
